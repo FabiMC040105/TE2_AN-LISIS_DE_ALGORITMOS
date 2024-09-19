@@ -46,7 +46,7 @@ public:
             head = newNode;
         } else {
             Node<T>* current = head;
-            while (current->next != nullptr && current->next->data , value) {
+            while (current->next != nullptr && current->next->data <= value) {
                 current = current->next;
             }
             newNode->next = current->next;
